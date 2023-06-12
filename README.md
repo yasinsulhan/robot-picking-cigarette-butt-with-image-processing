@@ -14,8 +14,16 @@ In this project, deep learning has proved to be a very powerful tool because of 
 
 The labeled datas are trained over 40000 steps and 16 batch sizes. To be understood such words. Iteration, batch size epoch and number of steps must be evaluated togetger. The training set is splited into many batches. When run the the algorithm, it requires one epoch to analyze the full training set. An epoch is composed of many iterations (or batches). Iteration is the number of batches needed to complete one Epoch. Batch size is the number of training samples used in one iteration. Epoch is one full cycle through the training dataset. A cycle is composed of many iterations. Number of Steps per epoch is equal Total number of training samples are divided by batch size. The detailed information can be accessed from here [2].
 
+After training, the result is evaluated by using graph and mAP (mean Average Precision) score. The loss of system decreases after steps. It shows that the system gets accuracy than first case. The graphs on the figure explains how the loss of the system decreases for trained model.
+
+![1](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/56d55734-79be-4f66-bb01-f9130e394c19)
+
+To be avoided for memorizing the average score must be between % 70 and % 75. Otherwise, the system goes memorizing. Thus, every object can be predicted as cigarette butt. As shown in image average mAP score shows 73.29 %. It proved that how the training system success over the datas.
+
+![5](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/94a8e7c2-2341-422f-b3d5-3fb30e0f9cde)
+
 # Last Version of the Robot
-Here is the last version of the robot as hown the image. The red led lights up if the object is cigarette_butt. There is a camera module in the middle of the robot and two arms folding up each other. Also robot has a cigarette butt bin to store them.
+Here is the last version of the robot as hown the image. The red led lights up if the object is cigarette_butt. There is a camera module in the middle of the robot and two arms folding up each other. Also robot has a cigarette butt bin to store them. This will be published soon.
 
 
 
