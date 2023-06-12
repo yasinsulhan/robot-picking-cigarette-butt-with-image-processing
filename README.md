@@ -3,6 +3,9 @@ In this project, object detection is done via Raspberry Pi by providing serial c
 
 ![gif_için](https://user-images.githubusercontent.com/109728194/232320761-05414af1-77d6-410b-a31b-7ab0665aa322.gif)
 
+https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/a3e7d762-433b-448d-ad02-52c1a2f6bb83
+
+
 # Training Model
 The datas are labeled before training process. In this project 1000 cigarette butt image are labeled by labelIMG program as shown in image. The frame covering the cigarette butt is drawed then, it is labeled as cigarette_butt. After label process, each labeled image has XML document which consists of information of frame covering the image. For example, these are x and y coordinate, label name etc. The images are ready for training by using CNN
 
