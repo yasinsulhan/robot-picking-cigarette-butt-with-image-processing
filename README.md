@@ -10,7 +10,7 @@ The datas are labeled before training process. In this project 1000 cigarette bu
 
 ![label](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/1e7c5b2b-a07f-4818-971d-f594387df9ee)
 
-In this project, deep learning has proved to be a very powerful tool because of its ability to handle large amounts of data. The interest to use hidden layers has surpassed traditional techniques, especially in pattern recognition. One of the most popular deep neural networks is Convolutional Neural Networks (also known as CNN or ConvNet) in deep learning, especially when it comes to computer vision applications. The application can be thought as in image . The pixel of image goes as input and this can be predicted into labeled form.
+In this project, deep learning has proved to be a very powerful tool because of its ability to handle large amounts of data. The interest to use hidden layers has surpassed traditional techniques, especially in pattern recognition. One of the most popular deep neural networks is Convolutional Neural Networks (also known as CNN or ConvNet) in deep learning, especially when it comes to computer vision applications like [1]. The application can be thought as in image . The pixel of image goes as input and this can be predicted into labeled form.
 
 ![cnn_tanıtım](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/8124060a-c7e2-42ad-9072-05493dfbc3be)
 
@@ -24,7 +24,17 @@ To be avoided for memorizing the average score must be between % 70 and % 75. Ot
 
 ![5](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/94a8e7c2-2341-422f-b3d5-3fb30e0f9cde)
 
+# How to Work ?
+The trained model in Google Colab platform iş downloaded. The environment created in Raspberry Pi Linux is set up and the Tensorflow, open-cv and camera packages is installed as these require for object detection. Fnally, the trained model is run in webcam.py python script file which consists of required object detection algorithm and serial comminication conditions between Raspberry Pi and UNO board.
+
 # Last Version of the Robot
 Here is the last version of the robot as shown the image. The red led lights up if the object is cigarette_butt. There is a camera module in the middle of the robot and two arms folding up each other. Also robot has a cigarette butt bin to store them. When the IR sensors beneath robot detect the object, the bounding box cover the object as real time object detection process in Raspberry Pi. If the object is cigarette butt the data is sent from Raspberry to UNO board and the arms, pick cigarette butt to store in bin.
 
 ![IMG-7046](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/a3a0f98a-ebc7-4b59-9454-94a603d3ba09)
+
+# References
+[1] - https://www.analyticsvidhya.com/blog/2021/05/convolutional-neural-networks-cnn/
+
+[2] - https://medium.com/syntaxerrorpub/what-are-steps-epochs-and-batch-size-in-deep-learning-5c942539a5f8
+
+[3] - https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Train_TFLite2_Object_Detction_Model.ipynb
