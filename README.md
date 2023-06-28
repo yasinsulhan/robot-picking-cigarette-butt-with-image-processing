@@ -1,6 +1,6 @@
 # robot-picking-cigarette-butt-with-image-processing
 In this project, object detection is done via Raspberry Pi by providing serial comminication Raspberry Pi and UNO. CPU is needed for image processing. Thus, Raspberry Pi 4B was choosen and camera is needed for taking real time video. Hereby, the camera module was choosen. In addition, there are some library handling image processing, object detection by training datas. In this project, tensorflow lite was used for training cigarette butt datas in Google Colab Platform. Because when compared between tensorflow, tensorflow lite, YOLO library with benchmark value. Tensorflow Lite gives high performance with high FPS and low temperature. The cigarette butt data which is image which have to be jpg to train. 1000 cigarette butts data are used to train model in this project. To sum up, serial commnication which is baud rate 115200 between Raspberry Pi and UNO is started. At that moment, the bounding box focus the object. If the object is cigarette butt, the data is sent from Raspberry Pi to UNO as shown below. When UNO takes the data, the conditions process. According to condition, robot is picked  cigarette butt.
-Here is the link below shows how the robot perform:
+Here is the link shows that how the robot perform:
 https://youtu.be/Oebzl6nOZV4
 
 ![gif_için](https://user-images.githubusercontent.com/109728194/232320761-05414af1-77d6-410b-a31b-7ab0665aa322.gif)
@@ -31,6 +31,7 @@ The trained model in Google Colab platform iş downloaded. The environment creat
 
 # Last Version of the Robot
 Here is the last version of the robot as shown the image. The red led lights up if the object is cigarette_butt. There is a camera module in the middle of the robot and two arms folding up each other. Also robot has a cigarette butt bin to store them. When the IR sensors beneath robot detect the object, the bounding box cover the object as real time object detection process in Raspberry Pi. If the object is cigarette butt the data is sent from Raspberry to UNO board and the arms, pick cigarette butt to store in bin. Also you can find a video in the link below that shows how to robot work by explanining all process.
+
 https://youtu.be/Oebzl6nOZV4
 
 ![IMG-7046](https://github.com/yasinsulhan/robot-picking-cigarette-butt-with-image-processing/assets/109728194/a3a0f98a-ebc7-4b59-9454-94a603d3ba09)
